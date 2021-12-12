@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotos bootcamp</title>
+</head>
+<body>
+    <header>
+        <h1>
+            FOTOS BOOTCAMP 
+        </h1>
+    </header>
+    <main>
+        <div>
+            <!-- fuente scr para una imagen -->
+            <!-- width no es recomendable cuando trabajas en css -->
+            <!-- el comando alt es para una alternativa cuando la imagen no aparace por algun error -->
+            <img src="./dia 2/assets/imagenes/nixon.jpg"
+                 alt="imagen personal"
+                 title="Nixon Guevara"
+                 width="400"
+            >
+
+        </div>
+        <hr />
+        <picture>
+            <!-- source -->
+            <!-- se basa en el ancho del navegador -->
+            <!-- para pantallas grandes -->
+            <source 
+                media="(min-width:800px)"
+                srcset="./dia 2/assets/imagenes/tarwi1.jpg"
+            >
+            <!-- para pantallas pequeñas -->
+            <img src="dia 2/assets/imagenes/tarwi.jpg"
+            alt="tarwi">
+        </picture>
+        <!-- desde la URL -->
+        <img src="https://images.unsplash.com/photo-1639301552304-ce918ae8c0b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+             alt="unsplash"
+             title="unsplash">
+             
+    </main>
+</body>
+</html>
